@@ -1,0 +1,12 @@
+# OS
+*.log
+**/*.log
+.DS_Store
+**/.DS_Store
+
+# Dependencies
+**/node_modules
+
+# React App
+build
+.env
