@@ -4,6 +4,7 @@ import CoreLayout from '../layouts/CoreLayout'
 import LoginRoute from './Login'
 import SignupRoute from './Signup'
 import AccountRoute from './Account'
+import Reset from './Reset'
 
 export default function createRoutes(store) {
   return (
@@ -15,7 +16,8 @@ export default function createRoutes(store) {
           [
             AccountRoute,
             SignupRoute,
-            LoginRoute
+            LoginRoute,
+            Reset
             /* Add More Routes Here */
           ].map((settings, index) => (
             <Route key={`Route-${index}`} {...settings} />

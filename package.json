@@ -8,6 +8,7 @@
 		"build": "react-scripts --max_old_space_size=4096 build",
 		"start:build": "npm run build && firebase serve --port=3000",
 		"eject": "react-scripts eject",
+		"commit": "npx git-cz",
 		"start": "react-scripts start",
 		"build:config": "firebase-ci createConfig",
 		"deploy": "firebase-ci deploy -s",
@@ -20,6 +21,11 @@
 		"node": ">=8.11.0"
 	},
 	"author": "Samuel Witke (https://github.com/SamuelWitke)",
+	"husky": {
+		"hooks": {
+		  "prepare-commit-msg": "exec < /dev/tty && yarn commmit --hook || true"
+		}
+	  },
 	"license": "MIT",
 	"dependencies": {
 		"@date-io/date-fns": "^1.3.13",
