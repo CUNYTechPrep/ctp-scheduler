@@ -23,7 +23,7 @@
 	"author": "Samuel Witke (https://github.com/SamuelWitke)",
 	"husky": {
 		"hooks": {
-		  "prepare-commit-msg": "exec < /dev/tty && yarn commmit --hook || true"
+		  "prepare-commit-msg": "exec < /dev/tty && yarn commit --hook || true"
 		}
 	  },
 	"license": "MIT",
